@@ -103,8 +103,6 @@ export default function Home() {
             <div className="g2" style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:1,marginTop:60,background:FAINT,borderRadius:12,overflow:"hidden"}}>
               {metrics.map((m,i)=><Rv key={m.l} delay={400+i*80}><div style={{background:BG,padding:"24px 16px",textAlign:"center"}}><div style={{fontSize:30,color:ACC,fontFamily:SF}}>{m.n}</div><div style={{fontSize:10,fontFamily:SN,fontWeight:600,color:"rgba(232,228,221,0.55)",letterSpacing:"0.06em",textTransform:"uppercase",marginTop:3}}>{m.l}</div><div style={{fontSize:9,fontFamily:SN,color:"rgba(232,228,221,0.2)",marginTop:2}}>{m.s}</div></div></Rv>)}
             </div>
-        </header>
-
         <section id="about" style={{padding:"90px 24px",maxWidth:1100,margin:"0 auto"}}><Rv><Lbl>About</Lbl></Rv>
           <div className="g2" style={{display:"grid",gridTemplateColumns:"1.2fr 1fr",gap:50,alignItems:"start"}}>
             <div>
