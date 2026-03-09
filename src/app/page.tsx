@@ -94,6 +94,7 @@ export default function Home() {
                   <a href="mailto:holdenstirling@gmail.com" style={{padding:"11px 26px",borderRadius:6,background:ACC,color:BG,fontFamily:SN,fontSize:13,fontWeight:600,textDecoration:"none"}}>Get in Touch</a>
                   <a href="https://ai-visibility-audit-two.vercel.app/" target="_blank" rel="noreferrer" style={{padding:"11px 26px",borderRadius:6,border:`1px solid ${ACC}40`,color:ACC,fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>Try My AI Audit Tool</a>
                   <span onClick={()=>scrollTo("work")} style={{padding:"11px 26px",borderRadius:6,border:"1px solid rgba(232,228,221,0.1)",color:TXT,fontFamily:SN,fontSize:13,fontWeight:500,cursor:"pointer"}}>View My Work</span>
+                  <a href="/resume-coach" style={{padding:"11px 26px",borderRadius:6,border:`1px solid rgba(99,102,241,0.3)`,color:"#6366F1",fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>AI Resume Coach</a>
                 </div></Rv>
               </div>
               <Rv delay={200}><div style={{width:200,height:200,borderRadius:"50%",overflow:"hidden",border:`3px solid ${ACC}30`,flexShrink:0}}>
@@ -148,6 +149,23 @@ export default function Home() {
             <div style={{background:"rgba(11,10,15,0.5)",borderRadius:12,padding:20,border:`1px solid ${FAINT}`}}>
               <h3 style={{fontSize:11,fontFamily:SN,fontWeight:600,color:"rgba(232,228,221,0.35)",marginBottom:12}}>What it audits:</h3>
               {["AI search visibility (ChatGPT, Claude, Perplexity, Google AI)","8 publisher directory listings with NAP checks","Review sentiment across Google, Yelp, Facebook","6 point SEO audit with letter grades A+ through F","Competitive benchmarking vs up to 5 competitors","Revenue impact projections by category","Email gated action plans for lead gen","Multi city support (up to 6 locations)"].map(item=><div key={item} style={{fontSize:11,fontFamily:SN,color:"rgba(232,228,221,0.5)",padding:"5px 0",borderBottom:"1px solid rgba(232,228,221,0.03)",lineHeight:1.5}}>{item}</div>)}
+            </div>
+          </div>
+        </Rv></div></section>
+
+
+        <section style={{padding:"60px 24px"}}><div style={{maxWidth:1100,margin:"0 auto"}}><Rv>
+          <div className="g2" style={{background:"linear-gradient(135deg,rgba(99,102,241,0.06),rgba(200,149,108,0.04))",border:"1px solid rgba(99,102,241,0.15)",borderRadius:18,padding:"clamp(24px,4vw,40px) clamp(20px,3vw,36px)",display:"grid",gridTemplateColumns:"1.3fr 1fr",gap:40,alignItems:"center"}}>
+            <div>
+              <span style={{display:"inline-block",fontSize:9,fontFamily:SN,fontWeight:700,color:"#6366F1",letterSpacing:"0.06em",background:"rgba(99,102,241,0.1)",border:"1px solid rgba(99,102,241,0.2)",borderRadius:100,padding:"4px 12px",marginBottom:16}}>FREE TOOL</span>
+              <h2 style={{fontSize:"clamp(24px,3.5vw,36px)",fontWeight:400,lineHeight:1.15,margin:"0 0 12px",fontFamily:SF,color:TXT}}>AI Resume <span style={{fontStyle:"italic",color:"#6366F1"}}>Coach</span></h2>
+              <P style={{margin:"0 0 8px",maxWidth:440}}>Upload your resume, paste a job description, and get a scored review with specific recommendations from a hiring manager perspective.</P>
+              <P style={{margin:"0 0 20px",maxWidth:440,fontSize:12,color:"rgba(232,228,221,0.35)"}}>Hiring manager comparison, ATS compatibility check, industry-specific tips, and a 6-second test. Powered by Claude AI.</P>
+              <a href="/resume-coach" style={{display:"inline-block",padding:"11px 24px",borderRadius:7,background:"#6366F1",color:"#fff",fontFamily:SN,fontSize:13,fontWeight:700,textDecoration:"none"}}>Try the Resume Coach {"\u2192"}</a>
+            </div>
+            <div style={{background:"rgba(11,10,15,0.5)",borderRadius:12,padding:20,border:`1px solid ${FAINT}`}}>
+              <h3 style={{fontSize:11,fontFamily:SN,fontWeight:600,color:"rgba(232,228,221,0.35)",marginBottom:12}}>What you get:</h3>
+              {["Overall letter grade with 5 category scores","6-second test: would a hiring manager keep reading?","Stack rank vs other candidates at your level","ATS compatibility score with explanation","Industry-specific tips for your target role","Top 3 prioritized actions to take right now","Strengths analysis so you know what to keep","Direct consultation option for deeper help"].map(item=><div key={item} style={{fontSize:11,fontFamily:SN,color:"rgba(232,228,221,0.5)",padding:"5px 0",borderBottom:"1px solid rgba(232,228,221,0.03)",lineHeight:1.5}}>{item}</div>)}
             </div>
           </div>
         </Rv></div></section>
