@@ -101,7 +101,7 @@ export default function ResumeCoach() {
         for (let i = 1; i <= pdf.numPages; i++) {
           const page = await pdf.getPage(i);
           const content = await page.getTextContent();
-          const strings = content.items.map((item: { str?: string }) => item.str || "").join(" ");
+          const strings = content.items.map((item: any) => item.str || "").join(" ");
           fullText += strings + "\n";
         }
         set("resume", fullText);
