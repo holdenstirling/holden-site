@@ -25,7 +25,7 @@ const faqData = [
   {q:"What is Holden's background before Arc4?",a:"8 years at Yext. Promoted 5 times from Enterprise Sales Coordinator to Senior Solutions Architect. Made President's Club multiple years. Led one of the largest enterprise implementations in the company's history."},
   {q:"What technologies does Holden work with?",a:"Python and Claude API daily. React, Next.js, TypeScript, Vercel. CMS platforms: WordPress, Contentful, Sanity, Drupal. Also ChatGPT, Gemini, REST APIs, AWS, Jira, HubSpot, and Slack."},
   {q:"What makes Arc4 different?",a:"Every one of our 50+ engagements was net new business. We maintain industry leading client retention with the majority of revenue coming from expansions."},
-  {q:"What are Holden's accomplishments outside work?",a:"5x Ironman finisher. Mountaineer and backcountry skier based in Colorado. Traveled solo through 15 countries. Started my first business at 12 growing and selling pumpkins in upstate New York. Nearly failed out of college. Figured it out."},
+  {q:"What are Holden's accomplishments outside work?",a:"5x Ironman finisher. Mountaineer and backcountry skier based in Colorado. Traveled solo through 15 countries. Started my first business at 12 growing and selling pumpkins in upstate Pennsylvania. Nearly failed out of college. Figured it out."},
   {q:"Where is Holden located?",a:"Denver, Colorado. I work with clients nationwide and previously lived in New York City and Washington D.C."},
 ];
 const faqSchema = {"@context":"https://schema.org","@type":"FAQPage",mainEntity:faqData.map(f=>({"@type":"Question",name:f.q,acceptedAnswer:{"@type":"Answer",text:f.a}}))};
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="g2" style={{display:"grid",gridTemplateColumns:"1.2fr 1fr",gap:50,alignItems:"start"}}>
             <div>
               <Rv delay={100}><H2>Building teams, scaling companies, <It>pushing limits.</It></H2></Rv>
-              <Rv delay={200}><P style={{marginBottom:14}}>My first business was a pumpkin stand in upstate New York. I was 12. By college I had more ambition than grades and nearly didn't make it out. But something clicked, and I landed in NYC at Yext where I got promoted 5 times in 8 years, made President's Club, and closed some of the largest deals in company history. Then I left it all to start something from nothing.</P></Rv>
+              <Rv delay={200}><P style={{marginBottom:14}}>My first business was a pumpkin stand in upstate Pennsylvania. I was 12. By college I had more ambition than grades and nearly didn't make it out. But something clicked, and I landed in NYC at Yext where I got promoted 5 times in 8 years, made President's Club, and closed some of the largest deals in company history. Then I left it all to start something from nothing.</P></Rv>
               <Rv delay={300}><P>Today I run multiple teams delivering 50+ enterprise implementations across retail, healthcare, manufacturing, and education. I still write production code with Python and the Claude API every day because I never want to be the founder who stops building. When I'm not working I'm usually training for my next Ironman, somewhere in the mountains, or planning which country to visit next.</P></Rv>
             </div>
             <Rv delay={200}><aside style={{background:"rgba(200,149,108,0.04)",border:"1px solid rgba(200,149,108,0.1)",borderRadius:14,padding:24}}>
