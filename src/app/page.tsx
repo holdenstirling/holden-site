@@ -129,12 +129,12 @@ export default function Home() {
         </div></section>
 
         <section style={{padding:"80px 24px"}}><div style={{maxWidth:1100,margin:"0 auto"}}><Rv><Lbl>Career</Lbl><H2>The <It>full story.</It></H2></Rv>
-          {timeline.map((t,i)=><Rv key={i} delay={i*80}><div className="g2" style={{display:"grid",gridTemplateColumns:"170px 1fr",gap:28,padding:"24px 0",borderTop:`1px solid ${FAINT}`}}><div><time style={{fontSize:12,fontFamily:MN,color:ACC,fontWeight:600}}>{t.yr}</time><div style={{fontSize:10,fontFamily:SN,color:"rgba(232,228,221,0.25)",marginTop:3}}>{t.co} — {t.loc}</div></div><div><h3 style={{fontSize:19,fontWeight:400,margin:"0 0 10px",fontFamily:SF,color:TXT}}>{t.t}</h3>{t.pts.map((p,j)=><div key={j} style={{fontSize:12,fontFamily:SN,color:DIM,lineHeight:1.6,paddingLeft:12,position:"relative",marginBottom:4}}><span style={{position:"absolute",left:0,color:ACC}}>·</span>{p}</div>)}</div></div></Rv>)}
+          {timeline.map((t,i)=><Rv key={i} delay={i*80}><div className="g2" style={{display:"grid",gridTemplateColumns:"170px 1fr",gap:28,padding:"24px 0",borderTop:`1px solid ${FAINT}`}}><div><time style={{fontSize:12,fontFamily:SN,fontVariantNumeric:'tabular-nums',color:ACC,fontWeight:600}}>{t.yr}</time><div style={{fontSize:10,fontFamily:SN,color:"rgba(232,228,221,0.25)",marginTop:3}}>{t.co} — {t.loc}</div></div><div><h3 style={{fontSize:19,fontWeight:400,margin:"0 0 10px",fontFamily:SF,color:TXT}}>{t.t}</h3>{t.pts.map((p,j)=><div key={j} style={{fontSize:12,fontFamily:SN,color:DIM,lineHeight:1.6,paddingLeft:12,position:"relative",marginBottom:4}}><span style={{position:"absolute",left:0,color:ACC}}>·</span>{p}</div>)}</div></div></Rv>)}
         </div></section>
 
         <section id="work" style={{padding:"80px 24px",background:BG2}}><div style={{maxWidth:1100,margin:"0 auto"}}><Rv><Lbl>Work</Lbl><H2>Things I've <It>built.</It></H2></Rv>
           <div className="g3" style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:14,marginTop:32}}>
-            {projects.map((p,i)=><Rv key={p.name} delay={i*70}><HCard href={p.link}><span style={{fontFamily:MN,fontSize:10,color:ACC,letterSpacing:"0.05em"}}>{p.tech}</span><h3 style={{fontSize:17,fontWeight:400,margin:"8px 0 6px",fontFamily:SF,color:TXT}}>{p.name}</h3><P style={{fontSize:12,margin:0}}>{p.desc}</P><div style={{marginTop:12,fontSize:11,fontFamily:SN,fontWeight:600,color:ACC}}>View on GitHub {"\u2192"}</div></HCard></Rv>)}
+            {projects.map((p,i)=><Rv key={p.name} delay={i*70}><HCard href={p.link}><span style={{fontFamily:SN,fontVariantNumeric:'tabular-nums',fontSize:10,color:ACC,letterSpacing:"0.05em"}}>{p.tech}</span><h3 style={{fontSize:17,fontWeight:400,margin:"8px 0 6px",fontFamily:SF,color:TXT}}>{p.name}</h3><P style={{fontSize:12,margin:0}}>{p.desc}</P><div style={{marginTop:12,fontSize:11,fontFamily:SN,fontWeight:600,color:ACC}}>View on GitHub {"\u2192"}</div></HCard></Rv>)}
           </div>
         </div></section>
 
