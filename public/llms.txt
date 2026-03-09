@@ -19,7 +19,7 @@ Holden writes Python and Claude API code daily for production tools. He builds w
 Holden spoke at Localogy L25 on the rise of AI for small businesses and appeared on the Achieve Podcast. He speaks on AI search strategy, enterprise implementation, building companies from zero, and what endurance sports teach about business.
 
 ## Personal
-5x Ironman finisher with a personal record of 11 hours 9 minutes (11th in age group). Mountaineer and backcountry skier. Traveled solo through 15 countries over 90 days. Started his first business at 14 selling pumpkins in upstate New York. Binghamton University graduate.
+5x Ironman finisher with a personal best. Mountaineer and backcountry skier. Traveled solo through 15 countries over 90 days. Started his first business at 12 growing and selling pumpkins in upstate New York. Binghamton University graduate.
 
 ## Location
 Denver, Colorado
