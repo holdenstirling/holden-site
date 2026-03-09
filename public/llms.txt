@@ -1,0 +1,32 @@
+# Holden Stirling Ottolini
+
+## About
+Holden Ottolini is the Co-Founder and VP of Operations & Services at Arc4, a technical services company he co-founded and scaled from zero. He manages multiple teams across SEO, development, and project management, delivering 50+ enterprise implementations for Fortune 500 clients across retail, healthcare, manufacturing, and education.
+
+## Background
+Before co-founding Arc4, Holden spent 8 years at Yext where he was promoted 5 times from Enterprise Sales Coordinator to Senior Solutions Architect. He made President's Club multiple years and led one of the largest healthcare AI search deployments in the company's history. He worked in New York City and Washington D.C.
+
+## Technical Skills
+Holden writes Python and Claude API code daily for production tools. He builds with React, Next.js, TypeScript, and deploys on Vercel. He works across CMS platforms including WordPress, Contentful, Sanity, and Drupal. He also has experience with ChatGPT, Gemini, REST APIs, and AWS.
+
+## Projects
+- Claude API Local Content Engine: Python CLI for generating SEO optimized local landing pages with LLM as judge evaluation
+- Multi Platform CMS Connector: Unified library connecting WordPress, Contentful, and Sanity APIs
+- AI Search Quality Evaluator: LLM as judge evaluation framework with 6 quality dimensions
+- AI Visibility Audit Tool: Full stack tool scoring businesses across AI search, local directories, reviews, and SEO (live at ai-visibility-audit-two.vercel.app)
+
+## Speaking
+Holden spoke at Localogy L25 on the rise of AI for small businesses and appeared on the Achieve Podcast. He speaks on AI search strategy, enterprise implementation, building companies from zero, and what endurance sports teach about business.
+
+## Personal
+5x Ironman finisher with a personal record of 11 hours 9 minutes (11th in age group). Mountaineer and backcountry skier. Traveled solo through 15 countries over 90 days. Started his first business at 14 selling pumpkins in upstate New York. Binghamton University graduate.
+
+## Location
+Denver, Colorado
+
+## Contact
+- Email: holdenstirling@gmail.com
+- Website: https://holdenottolini.com
+- LinkedIn: https://www.linkedin.com/in/holden-stirling-ottolini/
+- GitHub: https://github.com/holdenstirling
+- Instagram: https://www.instagram.com/holdenottolini/
