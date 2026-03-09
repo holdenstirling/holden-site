@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ACC = "#C8956C";
 const BG = "#0B0A0F";
@@ -32,7 +33,7 @@ const faqSchema = {"@context":"https://schema.org","@type":"FAQPage",mainEntity:
 function useVis(ref: React.RefObject<HTMLDivElement | null>) { const [v,setV]=useState(false); useEffect(()=>{if(!ref.current)return;const o=new IntersectionObserver(([e])=>{if(e.isIntersecting)setV(true)},{threshold:0.1});o.observe(ref.current);return()=>o.disconnect()},[ref]); return v }
 function Rv({children,delay=0}:{children:React.ReactNode;delay?:number}) { const ref=useRef<HTMLDivElement>(null);const v=useVis(ref); return <div ref={ref} style={{opacity:v?1:0,transform:v?"translateY(0)":"translateY(24px)",transition:`opacity 0.65s cubic-bezier(.4,0,.2,1) ${delay}ms, transform 0.65s cubic-bezier(.4,0,.2,1) ${delay}ms`}}>{children}</div> }
 function HCard({children,href}:{children:React.ReactNode;href?:string}) { const[h,setH]=useState(false);const s={background:h?"rgba(200,149,108,0.04)":"rgba(232,228,221,0.02)",border:`1px solid ${h?"rgba(200,149,108,0.2)":FAINT}`,borderRadius:14,padding:"22px 24px",height:"100%",transition:"all 0.3s",cursor:href?"pointer":"default" as const};const inner=<div style={s} onMouseEnter={()=>setH(true)} onMouseLeave={()=>setH(false)}>{children}</div>;if(href)return<a href={href} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:"inherit"}}>{inner}</a>;return inner }
-function FaqItem({q,a}:{q:string;a:string}) { const[open,setOpen]=useState(false);return(<div style={{borderBottom:`1px solid ${FAINT}`}}><button onClick={()=>setOpen(!open)} style={{width:"100%",display:"flex",justifyContent:"space-between",alignItems:"center",padding:"16px 0",background:"none",border:"none",cursor:"pointer",color:"rgba(232,228,221,0.8)",fontFamily:SN,fontSize:14,fontWeight:600,textAlign:"left",lineHeight:1.5}}>{q}<span style={{fontSize:18,color:ACC,transition:"transform 0.3s",transform:open?"rotate(45deg)":"rotate(0)",flexShrink:0,marginLeft:12}}>+</span></button><div style={{maxHeight:open?400:0,overflow:"hidden",transition:"max-height 0.4s cubic-bezier(.4,0,.2,1)"}}><p style={{fontSize:13,fontFamily:SN,color:DIM,lineHeight:1.7,padding:"0 0 16px"}}>{a}</p></div></div>)}
+function FaqItem({q,a}:{q:string;a:string}) { const[open,setOpen]=useState(false);return(<div style={{borderBottom:`1px solid ${FAINT}`}}><button onClick={()=>setOpen(!open)} aria-expanded={open} style={{width:"100%",display:"flex",justifyContent:"space-between",alignItems:"center",padding:"16px 0",background:"none",border:"none",cursor:"pointer",color:"rgba(232,228,221,0.8)",fontFamily:SN,fontSize:14,fontWeight:600,textAlign:"left",lineHeight:1.5}}>{q}<span style={{fontSize:18,color:ACC,transition:"transform 0.3s",transform:open?"rotate(45deg)":"rotate(0)",flexShrink:0,marginLeft:12}}>+</span></button><div style={{maxHeight:open?400:0,overflow:"hidden",transition:"max-height 0.4s cubic-bezier(.4,0,.2,1)"}}><p style={{fontSize:13,fontFamily:SN,color:DIM,lineHeight:1.7,padding:"0 0 16px"}}>{a}</p></div></div>)}
 
 const Lbl=({children}:{children:React.ReactNode})=><div style={{fontSize:11,fontFamily:SN,fontWeight:600,color:ACC,letterSpacing:"0.12em",textTransform:"uppercase",marginBottom:16}}>{children}</div>;
 const H2=({children}:{children:React.ReactNode})=><h2 style={{fontSize:"clamp(28px,4vw,42px)",fontWeight:400,lineHeight:1.15,margin:"0 0 16px",letterSpacing:"-0.01em",fontFamily:SF,color:TXT}}>{children}</h2>;
@@ -68,10 +69,10 @@ export default function Home() {
           <div style={{maxWidth:1100,margin:"0 auto",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
             <div onClick={()=>scrollTo("home")} style={{cursor:"pointer",fontSize:17,fontFamily:SN,fontWeight:700,letterSpacing:"-0.02em",color:TXT}}>H<span style={{color:ACC}}>.</span> Ottolini</div>
             <div className="nl" style={{display:"flex",gap:20,alignItems:"center"}}>
-              {NAVS.map(s=><span key={s} onClick={()=>scrollTo(s)} style={{cursor:"pointer",fontSize:10.5,fontFamily:SN,fontWeight:500,color:"rgba(232,228,221,0.4)",letterSpacing:"0.04em",textTransform:"uppercase",transition:"color 0.2s"}} onMouseEnter={e=>(e.target as HTMLElement).style.color=ACC} onMouseLeave={e=>(e.target as HTMLElement).style.color="rgba(232,228,221,0.4)"}>{s}</span>)}
+              {NAVS.map(s=><span key={s} onClick={()=>scrollTo(s)} style={{cursor:"pointer",fontSize:10.5,fontFamily:SN,fontWeight:500,color:"rgba(232,228,221,0.4)",letterSpacing:"0.04em",textTransform:"uppercase",transition:"color 0.2s"}} onMouseEnter={e=>(e.target as HTMLElement).style.color=ACC} onMouseLeave={e=>(e.target as HTMLElement).style.color="rgba(232,228,221,0.4)"} role="button" tabIndex={0} onKeyDown={e=>{if(e.key==="Enter")scrollTo(s)}}>{s}</span>)}
               <a href="https://github.com/holdenstirling" target="_blank" rel="noreferrer" style={{fontSize:10,fontFamily:SN,fontWeight:700,color:BG,background:ACC,padding:"5px 12px",borderRadius:5,textDecoration:"none"}}>GitHub</a>
             </div>
-            <button className="mob-show" onClick={()=>setMenuOpen(!menuOpen)} aria-label="Toggle menu" style={{display:"none",background:"none",border:"none",cursor:"pointer",padding:8}}>
+            <button className="mob-show" onClick={()=>setMenuOpen(!menuOpen)} aria-label="Toggle navigation menu" aria-expanded={menuOpen} style={{display:"none",background:"none",border:"none",cursor:"pointer",padding:8}}>
               <div style={{width:20,height:2,background:TXT,marginBottom:4,transition:"all 0.3s",transform:menuOpen?"rotate(45deg) translateY(6px)":"none"}}/>
               <div style={{width:20,height:2,background:TXT,marginBottom:4,opacity:menuOpen?0:1,transition:"all 0.3s"}}/>
               <div style={{width:20,height:2,background:TXT,transition:"all 0.3s",transform:menuOpen?"rotate(-45deg) translateY(-6px)":"none"}}/>
@@ -93,12 +94,12 @@ export default function Home() {
                 <Rv delay={300}><div style={{display:"flex",gap:12,flexWrap:"wrap"}}>
                   <a href="mailto:holdenstirling@gmail.com" style={{padding:"11px 26px",borderRadius:6,background:ACC,color:BG,fontFamily:SN,fontSize:13,fontWeight:600,textDecoration:"none"}}>Get in Touch</a>
                   <a href="/ai-audit" target="_blank" rel="noreferrer" style={{padding:"11px 26px",borderRadius:6,border:`1px solid ${ACC}40`,color:ACC,fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>Try My AI Audit Tool</a>
-                  <span onClick={()=>scrollTo("work")} style={{padding:"11px 26px",borderRadius:6,border:"1px solid rgba(232,228,221,0.1)",color:TXT,fontFamily:SN,fontSize:13,fontWeight:500,cursor:"pointer"}}>View My Work</span>
+                  <span onClick={()=>scrollTo("work")} style={{padding:"11px 26px",borderRadius:6,border:"1px solid rgba(232,228,221,0.1)",color:TXT,fontFamily:SN,fontSize:13,fontWeight:500,cursor:"pointer"}} role="button" tabIndex={0} onKeyDown={e=>{if(e.key==="Enter")scrollTo("work")}}>View My Work</span>
                   <a href="/resume-coach" style={{padding:"11px 26px",borderRadius:6,border:`1px solid rgba(99,102,241,0.3)`,color:"#6366F1",fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>AI Resume Coach</a>
                 </div></Rv>
               </div>
               <Rv delay={200}><div style={{width:200,height:200,borderRadius:"50%",overflow:"hidden",border:`3px solid ${ACC}30`,flexShrink:0}}>
-                <img src="/headshot.jpg" alt="Holden Stirling Ottolini, Co-Founder and VP of Operations and Services at Arc4" width={200} height={200} style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"center top"}}/>
+                <Image src="/headshot.jpg" alt="Holden Stirling Ottolini, Co-Founder and VP of Operations and Services at Arc4" width={200} height={200} style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"center top"}} priority />
               </div></Rv>
             </div>
             <div className="g2" style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:1,marginTop:60,background:FAINT,borderRadius:12,overflow:"hidden"}}>
