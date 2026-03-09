@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -30,8 +30,8 @@ const faqData = [
 ];
 const faqSchema = {"@context":"https://schema.org","@type":"FAQPage",mainEntity:faqData.map(f=>({"@type":"Question",name:f.q,acceptedAnswer:{"@type":"Answer",text:f.a}}))};
 
-function useVis(ref: React.RefObject<HTMLDivElement | null>) { const [v,setV]=useState(false); useEffect(()=>{if(!ref.current)return;const o=new IntersectionObserver(([e])=>{if(e.isIntersecting)setV(true)},{threshold:0.1});o.observe(ref.current);return()=>o.disconnect()},[ref]); return v }
-function Rv({children,delay=0}:{children:React.ReactNode;delay?:number}) { const ref=useRef<HTMLDivElement>(null);const v=useVis(ref); return <div ref={ref} style={{opacity:v?1:0,transform:v?"translateY(0)":"translateY(24px)",transition:`opacity 0.65s cubic-bezier(.4,0,.2,1) ${delay}ms, transform 0.65s cubic-bezier(.4,0,.2,1) ${delay}ms`}}>{children}</div> }
+
+function Rv({children,delay=0}:{children:React.ReactNode;delay?:number}) { return <div style={{animationName:'fadeUp',animationDuration:'0.6s',animationTimingFunction:'cubic-bezier(.4,0,.2,1)',animationFillMode:'both',animationDelay:`${delay}ms`}}>{children}</div> }
 function HCard({children,href}:{children:React.ReactNode;href?:string}) { const[h,setH]=useState(false);const s={background:h?"rgba(200,149,108,0.04)":"rgba(232,228,221,0.02)",border:`1px solid ${h?"rgba(200,149,108,0.2)":FAINT}`,borderRadius:14,padding:"22px 24px",height:"100%",transition:"all 0.3s",cursor:href?"pointer":"default" as const};const inner=<div style={s} onMouseEnter={()=>setH(true)} onMouseLeave={()=>setH(false)}>{children}</div>;if(href)return<a href={href} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:"inherit"}}>{inner}</a>;return inner }
 function FaqItem({q,a}:{q:string;a:string}) { const[open,setOpen]=useState(false);return(<div style={{borderBottom:`1px solid ${FAINT}`}}><button onClick={()=>setOpen(!open)} aria-expanded={open} style={{width:"100%",display:"flex",justifyContent:"space-between",alignItems:"center",padding:"16px 0",background:"none",border:"none",cursor:"pointer",color:"rgba(232,228,221,0.8)",fontFamily:SN,fontSize:14,fontWeight:600,textAlign:"left",lineHeight:1.5}}>{q}<span style={{fontSize:18,color:ACC,transition:"transform 0.3s",transform:open?"rotate(45deg)":"rotate(0)",flexShrink:0,marginLeft:12}}>+</span></button><div style={{maxHeight:open?400:0,overflow:"hidden",transition:"max-height 0.4s cubic-bezier(.4,0,.2,1)"}}><p style={{fontSize:13,fontFamily:SN,color:DIM,lineHeight:1.7,padding:"0 0 16px"}}>{a}</p></div></div>)}
 

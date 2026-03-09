@@ -21,3 +21,5 @@ body { background: var(--bg); color: var(--txt); font-family: var(--serif); -web
 @media (min-width: 801px) {
   .mob-show { display: none !important; }
 }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
