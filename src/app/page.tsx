@@ -92,7 +92,7 @@ export default function Home() {
                 <Rv delay={200}><P style={{maxWidth:520,margin:"0 0 36px",fontSize:16}}>From selling pumpkins at 14 to co-founding a company and scaling it to 17 people. I write Claude API code in the morning, present to Fortune 500 executives in the afternoon, and manage my team in between.</P></Rv>
                 <Rv delay={300}><div style={{display:"flex",gap:12,flexWrap:"wrap"}}>
                   <a href="mailto:holdenstirling@gmail.com" style={{padding:"11px 26px",borderRadius:6,background:ACC,color:BG,fontFamily:SN,fontSize:13,fontWeight:600,textDecoration:"none"}}>Get in Touch</a>
-                  <a href="https://ai-visibility-audit-two.vercel.app/" target="_blank" rel="noreferrer" style={{padding:"11px 26px",borderRadius:6,border:`1px solid ${ACC}40`,color:ACC,fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>Try My AI Audit Tool</a>
+                  <a href="/ai-audit" target="_blank" rel="noreferrer" style={{padding:"11px 26px",borderRadius:6,border:`1px solid ${ACC}40`,color:ACC,fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>Try My AI Audit Tool</a>
                   <span onClick={()=>scrollTo("work")} style={{padding:"11px 26px",borderRadius:6,border:"1px solid rgba(232,228,221,0.1)",color:TXT,fontFamily:SN,fontSize:13,fontWeight:500,cursor:"pointer"}}>View My Work</span>
                   <a href="/resume-coach" style={{padding:"11px 26px",borderRadius:6,border:`1px solid rgba(99,102,241,0.3)`,color:"#6366F1",fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>AI Resume Coach</a>
                 </div></Rv>
@@ -144,7 +144,7 @@ export default function Home() {
               <h2 style={{fontSize:"clamp(24px,3.5vw,36px)",fontWeight:400,lineHeight:1.15,margin:"0 0 12px",fontFamily:SF,color:TXT}}>AI Visibility & Local SEO <It>Audit Tool</It></h2>
               <P style={{margin:"0 0 8px",maxWidth:440}}>Free tool scoring businesses across ChatGPT, Claude, Perplexity, Google AI, 8 directories, 3 review platforms, and 6 SEO dimensions.</P>
               <P style={{margin:"0 0 20px",maxWidth:440,fontSize:12,color:"rgba(232,228,221,0.35)"}}>Competitive benchmarking, revenue projections, email gated action plans. React, Next.js, Vercel.</P>
-              <a href="https://ai-visibility-audit-two.vercel.app/" target="_blank" rel="noreferrer" style={{display:"inline-block",padding:"11px 24px",borderRadius:7,background:ACC,color:BG,fontFamily:SN,fontSize:13,fontWeight:700,textDecoration:"none"}}>Try the Live Tool {"\u2192"}</a>
+              <a href="/ai-audit" target="_blank" rel="noreferrer" style={{display:"inline-block",padding:"11px 24px",borderRadius:7,background:ACC,color:BG,fontFamily:SN,fontSize:13,fontWeight:700,textDecoration:"none"}}>Try the Live Tool {"\u2192"}</a>
             </div>
             <div style={{background:"rgba(11,10,15,0.5)",borderRadius:12,padding:20,border:`1px solid ${FAINT}`}}>
               <h3 style={{fontSize:11,fontFamily:SN,fontWeight:600,color:"rgba(232,228,221,0.35)",marginBottom:12}}>What it audits:</h3>
