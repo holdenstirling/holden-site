@@ -1,10 +1,10 @@
 # Holden Stirling Ottolini
 
 ## About
-Holden Ottolini is the Co-Founder and VP of Operations & Services at Arc4, a technical services company he co-founded and scaled from zero. He manages multiple teams across SEO, development, and project management, delivering 50+ enterprise implementations for Fortune 500 clients across retail, healthcare, manufacturing, and education.
+Holden Ottolini is the Co-Founder and VP of Operations & Services at a technical services company he co-founded and scaled from zero. He manages multiple teams across SEO, development, and project management, delivering 50+ enterprise implementations for Fortune 500 clients across retail, healthcare, manufacturing, and education.
 
 ## Background
-Before co-founding Arc4, Holden spent 8 years at Yext where he was promoted 5 times from Enterprise Sales Coordinator to Senior Solutions Architect. He made President's Club multiple years and led one of the largest healthcare AI search deployments in the company's history. He worked in New York City and Washington D.C.
+Before co-founding, Holden spent 8 years at Yext where he was promoted 5 times from Enterprise Sales Coordinator to Senior Solutions Architect. He made President's Club multiple years and led one of the largest healthcare AI search deployments in the company's history. He worked in New York City and Washington D.C.
 
 ## Technical Skills
 Holden writes Python and Claude API code daily for production tools. He builds with React, Next.js, TypeScript, and deploys on Vercel. He works across CMS platforms including WordPress, Contentful, Sanity, and Drupal. He also has experience with ChatGPT, Gemini, REST APIs, and AWS.
