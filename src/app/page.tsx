@@ -36,7 +36,7 @@ function HCard({children,href}:{children:React.ReactNode;href?:string}) { const[
 function FaqItem({q,a}:{q:string;a:string}) { const[open,setOpen]=useState(false);return(<div style={{borderBottom:`1px solid ${FAINT}`}}><button onClick={()=>setOpen(!open)} aria-expanded={open} style={{width:"100%",display:"flex",justifyContent:"space-between",alignItems:"center",padding:"16px 0",background:"none",border:"none",cursor:"pointer",color:"rgba(232,228,221,0.8)",fontFamily:SN,fontSize:14,fontWeight:600,textAlign:"left",lineHeight:1.5}}>{q}<span style={{fontSize:18,color:ACC,transition:"transform 0.3s",transform:open?"rotate(45deg)":"rotate(0)",flexShrink:0,marginLeft:12}}>+</span></button><div style={{maxHeight:open?400:0,overflow:"hidden",transition:"max-height 0.4s cubic-bezier(.4,0,.2,1)"}}><p style={{fontSize:13,fontFamily:SN,color:DIM,lineHeight:1.7,padding:"0 0 16px"}}>{a}</p></div></div>)}
 
 const Lbl=({children}:{children:React.ReactNode})=><div style={{fontSize:11,fontFamily:SN,fontWeight:600,color:ACC,letterSpacing:"0.12em",textTransform:"uppercase",marginBottom:16}}>{children}</div>;
-const H2=({children}:{children:React.ReactNode})=><h2 style={{fontSize:"clamp(28px,4vw,42px)",fontWeight:400,lineHeight:1.15,margin:"0 0 16px",letterSpacing:"-0.01em",fontFamily:SF,color:TXT}}>{children}</h2>;
+const H2=({children}:{children:React.ReactNode})=><h2 style={{fontSize:"clamp(28px,4vw,42px)",fontWeight:400,lineHeight:1.15,margin:"0 0 12px",letterSpacing:"-0.01em",fontFamily:SF,color:TXT}}>{children}</h2>;
 const It=({children}:{children:React.ReactNode})=><span style={{fontStyle:"italic",color:ACC}}>{children}</span>;
 const P=({children,style={}}:{children:React.ReactNode;style?:React.CSSProperties})=><p style={{fontSize:14,fontFamily:SN,color:DIM,lineHeight:1.7,...style}}>{children}</p>;
 
@@ -85,12 +85,12 @@ export default function Home() {
 
         <header id="home" style={{minHeight:"100vh",display:"flex",alignItems:"center",position:"relative"}}>
           <div style={{position:"absolute",inset:0,background:"radial-gradient(ellipse at 20% 50%,rgba(200,149,108,0.06) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(200,149,108,0.03) 0%,transparent 50%)"}}/>
-          <div style={{position:"relative",maxWidth:1100,margin:"0 auto",padding:"120px 24px 80px",width:"100%"}}>
+          <div style={{position:"relative",maxWidth:1100,margin:"0 auto",padding:"80px 24px 50px",width:"100%"}}>
             <div className="g2" style={{display:"grid",gridTemplateColumns:"1fr auto",gap:50,alignItems:"center"}}>
               <div>
                 <Rv><p style={{fontSize:11,fontFamily:SN,fontWeight:600,color:ACC,letterSpacing:"0.12em",textTransform:"uppercase",marginBottom:20}}>Co-Founder & VP of Operations & Services at Arc4</p></Rv>
-                <Rv delay={100}><h1 style={{fontSize:"clamp(36px,6vw,68px)",fontWeight:400,lineHeight:1.05,margin:"0 0 24px",letterSpacing:"-0.02em",fontFamily:SF,color:TXT}}>I build companies,<br/><It>ship products,</It><br/>and close deals.</h1></Rv>
-                <Rv delay={200}><P style={{maxWidth:520,margin:"0 0 36px",fontSize:16}}>I sold my first pumpkin at 12, nearly flunked out of college, and somehow ended up co-founding a company that delivers for the Fortune 500. I write Claude API code before my first coffee and present to executives after lunch.</P></Rv>
+                <Rv delay={100}><h1 style={{fontSize:"clamp(36px,6vw,68px)",fontWeight:400,lineHeight:1.05,margin:"0 0 18px",letterSpacing:"-0.02em",fontFamily:SF,color:TXT}}>I build companies,<br/><It>ship products,</It><br/>and close deals.</h1></Rv>
+                <Rv delay={200}><P style={{maxWidth:520,margin:"0 0 24px",fontSize:16}}>I sold my first pumpkin at 12, nearly flunked out of college, and somehow ended up co-founding a company that delivers for the Fortune 500. I write Claude API code before my first coffee and present to executives after lunch.</P></Rv>
                 <Rv delay={300}><div style={{display:"flex",gap:12,flexWrap:"wrap"}}>
                   <a href="mailto:holdenstirling@gmail.com" style={{padding:"11px 26px",borderRadius:6,background:ACC,color:BG,fontFamily:SN,fontSize:13,fontWeight:600,textDecoration:"none"}}>Get in Touch</a>
                   <a href="/ai-audit" target="_blank" rel="noreferrer" style={{padding:"11px 26px",borderRadius:6,border:`1px solid ${ACC}40`,color:ACC,fontFamily:SN,fontSize:13,fontWeight:500,textDecoration:"none"}}>Try My AI Audit Tool</a>
@@ -102,13 +102,13 @@ export default function Home() {
                 <Image src="/headshot.jpg" alt="Holden Stirling Ottolini, Co-Founder and VP of Operations and Services at Arc4" width={200} height={200} style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"center top"}} priority />
               </div></Rv>
             </div>
-            <div className="g2" style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:1,marginTop:60,background:FAINT,borderRadius:12,overflow:"hidden"}}>
+            <div className="g2" style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:1,marginTop:36,background:FAINT,borderRadius:12,overflow:"hidden"}}>
               {metrics.map((m,i)=><Rv key={m.l} delay={400+i*80}><div style={{background:BG,padding:"24px 16px",textAlign:"center"}}><div style={{fontSize:30,color:ACC,fontFamily:SF}}>{m.n}</div><div style={{fontSize:10,fontFamily:SN,fontWeight:600,color:"rgba(232,228,221,0.55)",letterSpacing:"0.06em",textTransform:"uppercase",marginTop:3}}>{m.l}</div><div style={{fontSize:9,fontFamily:SN,color:"rgba(232,228,221,0.2)",marginTop:2}}>{m.s}</div></div></Rv>)}
             </div>
           </div>
         </header>
 
-        <section id="about" style={{padding:"90px 24px",maxWidth:1100,margin:"0 auto"}}><Rv><Lbl>About</Lbl></Rv>
+        <section id="about" style={{padding:"60px 24px",maxWidth:1100,margin:"0 auto"}}><Rv><Lbl>About</Lbl></Rv>
           <div className="g2" style={{display:"grid",gridTemplateColumns:"1.2fr 1fr",gap:50,alignItems:"start"}}>
             <div>
               <Rv delay={100}><H2>Building teams, scaling companies, <It>pushing limits.</It></H2></Rv>
