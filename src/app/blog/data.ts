@@ -106,7 +106,7 @@ export const blogData: Record<string, BlogPost> = {
     tag: "Personal", date: "2025-07-20", readingTime: 5,
     related: ["ironman-business-lessons", "yext-to-arc4"],
     sections: [
-      { text: "Before co-founding I took 90 days and traveled solo through 15 countries. It was the best investment I have ever made in myself and the lessons I brought back shaped how I run my company today." },
+      { text: "Before co-founding I took 90 days and traveled solo through 15 countries. It was the best investment I have ever made in myself and the lessons I brought back shaped how I ran the company afterward." },
       { heading: "Comfort with ambiguity", text: "The first thing solo travel teaches you is comfort with ambiguity. When you land in a country where you do not speak the language with no plan and no one to rely on, you learn to figure things out fast. That muscle is exactly what you need when you are building a company from zero where every day brings problems no one has solved before." },
       { heading: "Connecting with people", text: "The second lesson is about connecting with people. When you are alone you have to initiate every conversation. You learn to read people quickly, to find common ground with anyone, and to build trust fast. These are the same skills that make you good at enterprise sales and client relationships." },
       { heading: "Perspective", text: "The third lesson is perspective. When you spend time in countries with completely different cultures and standards of living, the problems you face in business feel a lot more manageable. A difficult client email does not hit the same way when you have navigated a bus system in rural Southeast Asia with no map." },

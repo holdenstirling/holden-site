@@ -1,25 +1,31 @@
 # Holden Stirling Ottolini
 
 ## About
-Holden Ottolini is the Co-Founder and VP of Operations & Services at a technical services company he co-founded and scaled from zero. He manages multiple teams across SEO, development, and project management, delivering 50+ enterprise implementations for Fortune 500 clients across retail, healthcare, manufacturing, and education.
+Holden Ottolini is a Senior Solutions Architect at Writer, covering enterprise accounts in the West region. He runs technical pre-sales: discovery, solution design, proofs of concept, and integration planning with customer architecture and IT teams. He also takes on select outside consulting work.
 
 ## Background
-Before co-founding, Holden spent 8 years at Yext where he was promoted 5 times from Enterprise Sales Coordinator to Senior Solutions Architect. He made President's Club multiple years and led one of the largest healthcare AI search deployments in the company's history. He worked in New York City and Washington D.C.
+Before Writer, Holden co-founded Arc4, a systems integrator he grew from zero to 17 people with 50+ enterprise implementations. Before that he spent 8 years at Yext, promoted 5 times from Enterprise Sales Coordinator to Senior Solutions Architect, with multiple President's Club years. He led one of the largest healthcare provider search deployments in Yext's history. He has worked in New York City, Washington D.C., and Denver.
 
-## Technical Skills
-Holden writes Python and Claude API code daily for production tools. He builds with React, Next.js, TypeScript, and deploys on Vercel. He works across CMS platforms including WordPress, Contentful, Sanity, and Drupal. He also has experience with ChatGPT, Gemini, REST APIs, and AWS.
+## Consulting
+- Pre-sales and solutions engineering, including fractional solutions architect work
+- Platform and vendor advisory: enterprise collaboration (Zoom, Microsoft Teams), digital identity and e-signature, web platforms
+- Website and CMS projects: WordPress, Contentful, Sanity, Drupal, Webflow, Shopify, Next.js
+- Search and local visibility
+- Expert network calls on enterprise software, collaboration, identity, and website infrastructure
 
-## Projects
-- Claude API Local Content Engine: Python CLI for generating SEO optimized local landing pages with LLM as judge evaluation
-- Multi Platform CMS Connector: Unified library connecting WordPress, Contentful, and Sanity APIs
-- AI Search Quality Evaluator: LLM as judge evaluation framework with 6 quality dimensions
-- AI Visibility Audit Tool: Full stack tool scoring businesses across AI search, local directories, reviews, and SEO (live at ai-visibility-audit-two.vercel.app)
+## Skills
+Solution architecture, technical pre-sales, enterprise implementation, integrations and APIs, AWS and Azure, Python, TypeScript, React, Next.js.
+
+## Side Projects
+- Local Visibility Audit: free tool scoring a business across search, directories, reviews, and SEO (https://holdenottolini.com/ai-audit)
+- Resume Coach: hiring-manager style resume review (https://holdenottolini.com/resume-coach)
+- Multi Platform CMS Connector, Local Content Engine, Search Quality Evaluator (https://github.com/holdenstirling)
 
 ## Speaking
-Holden spoke at Localogy L25 on the rise of AI for small businesses and appeared on the Achieve Podcast. He speaks on AI search strategy, enterprise implementation, building companies from zero, and what endurance sports teach about business.
+Spoke at Localogy L25 and has appeared as a podcast guest. Topics: enterprise pre-sales and proofs of concept, implementation at scale, building a company from zero, and what endurance sports teach about work.
 
 ## Personal
-5x Ironman finisher with a personal best. Mountaineer and backcountry skier. Traveled solo through 15 countries over 90 days. Started his first business at 12 growing and selling pumpkins in upstate Pennsylvania. Binghamton University graduate.
+5x Ironman finisher. Mountaineer and backcountry skier. Traveled solo through 15 countries over 90 days. Started his first business at 12 selling pumpkins in upstate Pennsylvania. Binghamton University graduate.
 
 ## Location
 Denver, Colorado

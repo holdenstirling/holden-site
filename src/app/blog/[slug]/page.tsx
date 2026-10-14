@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div style={{borderTop:`1px solid ${FAINT}`,marginTop:40,paddingTop:28,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:12}}>
           <div>
             <div style={{fontSize:12,fontFamily:SN,fontWeight:600,color:"rgba(232,228,221,0.7)"}}>Holden Stirling Ottolini</div>
-            <div style={{fontSize:11,fontFamily:SN,color:"rgba(232,228,221,0.3)"}}>Co-Founder & VP of Operations & Services, Arc4</div>
+            <div style={{fontSize:11,fontFamily:SN,color:"rgba(232,228,221,0.3)"}}>Senior Solutions Architect, Writer</div>
           </div>
           <a href="mailto:holdenstirling@gmail.com" style={{fontSize:12,fontFamily:SN,fontWeight:600,color:ACC,textDecoration:"none"}}>Get in touch {"\u2192"}</a>
         </div>

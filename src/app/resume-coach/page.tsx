@@ -428,7 +428,7 @@ export default function ResumeCoach() {
             </div>
 
             <div style={{ textAlign: "center", borderTop: `1px solid ${FAINT}`, paddingTop: 28, marginTop: 8 }}>
-              <p style={{ fontSize: 12, fontFamily: SN, color: "rgba(232,228,221,0.3)", marginBottom: 12 }}>{"Built by Holden Ottolini \u2014 co-founder, solutions architect, 5x Ironman finisher"}</p>
+              <p style={{ fontSize: 12, fontFamily: SN, color: "rgba(232,228,221,0.3)", marginBottom: 12 }}>{"Built by Holden Ottolini, solutions architect and 5x Ironman finisher"}</p>
               <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
                 <button onClick={() => { setStep(0); setResult(null); setShowContact(false); setContactSent(false); setFileName(""); setForm({ resume: "", jobDescription: "", company: "", targetRole: "", experience: "", biggestWin: "", struggle: "", email: "" }); }} style={btnOutline}>Review Another Resume</button>
                 <Link href="/" style={{ ...btnStyle, textDecoration: "none", display: "inline-block" }}>holdenottolini.com</Link>
